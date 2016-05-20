@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jack.animationdemo.MainActivity">
+
+    <ImageView
+        android:id="@+id/translation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_launcher"
+        android:layout_marginBottom="50dp"
+        android:contentDescription="平移" />
+    <ImageView
+        android:id="@+id/rotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="@mipmap/ic_launcher"
+        android:layout_below="@id/translation"
+        android:contentDescription="旋转" />
+    <ImageView
+        android:id="@+id/scale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@id/rotate"
+        android:background="@mipmap/ic_launcher"
+        android:contentDescription="放大" />
+    <ImageView
+        android:id="@+id/alpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_launcher"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@id/scale"
+        android:contentDescription="透明度" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/fire"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/alpha"
+        android:text="运动" />
+</RelativeLayout>
