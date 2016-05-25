@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.jack.animationdemo.MainActivity">
+    tools:context=".TweenActivity">
 
     <ImageView
         android:id="@+id/translation"
@@ -44,4 +44,10 @@
         android:layout_height="50dp"
         android:layout_below="@id/alpha"
         android:text="运动" />
+    <Button
+        android:id="@+id/code"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/fire"
+        android:text="代码实现"/>
 </RelativeLayout>

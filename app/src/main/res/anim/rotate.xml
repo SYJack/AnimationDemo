@@ -2,16 +2,17 @@
 <set xmlns:android="http://schemas.android.com/apk/res/android"
     android:interpolator="@android:anim/accelerate_decelerate_interpolator"
    >
-    <!--
+    <!--旋转动画
         fromDegrees 动画开始时的角度
         toDegrees 动画结束时物件的旋转角度,正代表顺时针
         pivotX 属性为动画相对于物件的X坐标的开始位置
-        pivotY 属性为动画相对于物件的Y坐标的开始位置 -->
+        pivotY 属性为动画相对于物件的Y坐标的开始位置
+        fillAfter为true则不恢复原状-->
     <rotate
-
         android:duration="1000"
         android:fromDegrees="0"
         android:pivotX="50%"
         android:pivotY="50%"
+        android:fillAfter="true"
         android:toDegrees="360" />
 </set>
